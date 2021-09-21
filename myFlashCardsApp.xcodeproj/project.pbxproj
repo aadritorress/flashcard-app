@@ -1,0 +1,411 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8780B3B326F93F4600793FEA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8780B3B226F93F4600793FEA /* GoogleService-Info.plist */; };
+		8780B3B526F953BE00793FEA /* CreateCardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8780B3B426F953BE00793FEA /* CreateCardsViewController.swift */; };
+		8780B3DB26F9FC8600793FEA /* MyAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8780B3DA26F9FC8600793FEA /* MyAccountViewController.swift */; };
+		8780B3DD26FA01E600793FEA /* AllCardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8780B3DC26FA01E600793FEA /* AllCardsViewController.swift */; };
+		8780B3E726FA49D400793FEA /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 8780B3E626FA49D400793FEA /* FirebaseCrashlytics */; };
+		8780B3E926FA49D400793FEA /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = 8780B3E826FA49D400793FEA /* FirebaseRemoteConfig */; };
+		8780B3EB26FA49D400793FEA /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 8780B3EA26FA49D400793FEA /* FirebaseAuth */; };
+		8780B3ED26FA49D400793FEA /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 8780B3EC26FA49D400793FEA /* FirebaseDatabase */; };
+		87B8860626F91423005FC370 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B8860526F91423005FC370 /* AppDelegate.swift */; };
+		87B8860826F91423005FC370 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B8860726F91423005FC370 /* SceneDelegate.swift */; };
+		87B8860A26F91423005FC370 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B8860926F91423005FC370 /* ViewController.swift */; };
+		87B8860D26F91423005FC370 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87B8860B26F91423005FC370 /* Main.storyboard */; };
+		87B8860F26F91424005FC370 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87B8860E26F91424005FC370 /* Assets.xcassets */; };
+		87B8861226F91424005FC370 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87B8861026F91424005FC370 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8780B3B226F93F4600793FEA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8780B3B426F953BE00793FEA /* CreateCardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCardsViewController.swift; sourceTree = "<group>"; };
+		8780B3DA26F9FC8600793FEA /* MyAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAccountViewController.swift; sourceTree = "<group>"; };
+		8780B3DC26FA01E600793FEA /* AllCardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCardsViewController.swift; sourceTree = "<group>"; };
+		87B8860226F91423005FC370 /* myFlashCardsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myFlashCardsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		87B8860526F91423005FC370 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		87B8860726F91423005FC370 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		87B8860926F91423005FC370 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		87B8860C26F91423005FC370 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		87B8860E26F91424005FC370 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		87B8861126F91424005FC370 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		87B8861326F91424005FC370 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		87B885FF26F91423005FC370 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8780B3E726FA49D400793FEA /* FirebaseCrashlytics in Frameworks */,
+				8780B3EB26FA49D400793FEA /* FirebaseAuth in Frameworks */,
+				8780B3ED26FA49D400793FEA /* FirebaseDatabase in Frameworks */,
+				8780B3E926FA49D400793FEA /* FirebaseRemoteConfig in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		87B885F926F91423005FC370 = {
+			isa = PBXGroup;
+			children = (
+				87B8860426F91423005FC370 /* myFlashCardsApp */,
+				87B8860326F91423005FC370 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		87B8860326F91423005FC370 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				87B8860226F91423005FC370 /* myFlashCardsApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		87B8860426F91423005FC370 /* myFlashCardsApp */ = {
+			isa = PBXGroup;
+			children = (
+				8780B3B226F93F4600793FEA /* GoogleService-Info.plist */,
+				87B8860526F91423005FC370 /* AppDelegate.swift */,
+				87B8860726F91423005FC370 /* SceneDelegate.swift */,
+				87B8860926F91423005FC370 /* ViewController.swift */,
+				8780B3DC26FA01E600793FEA /* AllCardsViewController.swift */,
+				8780B3DA26F9FC8600793FEA /* MyAccountViewController.swift */,
+				8780B3B426F953BE00793FEA /* CreateCardsViewController.swift */,
+				87B8860B26F91423005FC370 /* Main.storyboard */,
+				87B8860E26F91424005FC370 /* Assets.xcassets */,
+				87B8861026F91424005FC370 /* LaunchScreen.storyboard */,
+				87B8861326F91424005FC370 /* Info.plist */,
+			);
+			path = myFlashCardsApp;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		87B8860126F91423005FC370 /* myFlashCardsApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 87B8861626F91424005FC370 /* Build configuration list for PBXNativeTarget "myFlashCardsApp" */;
+			buildPhases = (
+				87B885FE26F91423005FC370 /* Sources */,
+				87B885FF26F91423005FC370 /* Frameworks */,
+				87B8860026F91423005FC370 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = myFlashCardsApp;
+			packageProductDependencies = (
+				8780B3E626FA49D400793FEA /* FirebaseCrashlytics */,
+				8780B3E826FA49D400793FEA /* FirebaseRemoteConfig */,
+				8780B3EA26FA49D400793FEA /* FirebaseAuth */,
+				8780B3EC26FA49D400793FEA /* FirebaseDatabase */,
+			);
+			productName = myFlashCardsApp;
+			productReference = 87B8860226F91423005FC370 /* myFlashCardsApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		87B885FA26F91423005FC370 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					87B8860126F91423005FC370 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+				};
+			};
+			buildConfigurationList = 87B885FD26F91423005FC370 /* Build configuration list for PBXProject "myFlashCardsApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 87B885F926F91423005FC370;
+			packageReferences = (
+				8780B3E526FA49D400793FEA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = 87B8860326F91423005FC370 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				87B8860126F91423005FC370 /* myFlashCardsApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		87B8860026F91423005FC370 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87B8861226F91424005FC370 /* LaunchScreen.storyboard in Resources */,
+				8780B3B326F93F4600793FEA /* GoogleService-Info.plist in Resources */,
+				87B8860F26F91424005FC370 /* Assets.xcassets in Resources */,
+				87B8860D26F91423005FC370 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		87B885FE26F91423005FC370 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87B8860A26F91423005FC370 /* ViewController.swift in Sources */,
+				87B8860626F91423005FC370 /* AppDelegate.swift in Sources */,
+				8780B3DB26F9FC8600793FEA /* MyAccountViewController.swift in Sources */,
+				8780B3B526F953BE00793FEA /* CreateCardsViewController.swift in Sources */,
+				8780B3DD26FA01E600793FEA /* AllCardsViewController.swift in Sources */,
+				87B8860826F91423005FC370 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		87B8860B26F91423005FC370 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				87B8860C26F91423005FC370 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		87B8861026F91424005FC370 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				87B8861126F91424005FC370 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		87B8861426F91424005FC370 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		87B8861526F91424005FC370 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		87B8861726F91424005FC370 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = myFlashCardsApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "practice-flashcards.myFlashCardsApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		87B8861826F91424005FC370 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = myFlashCardsApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "practice-flashcards.myFlashCardsApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		87B885FD26F91423005FC370 /* Build configuration list for PBXProject "myFlashCardsApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87B8861426F91424005FC370 /* Debug */,
+				87B8861526F91424005FC370 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		87B8861626F91424005FC370 /* Build configuration list for PBXNativeTarget "myFlashCardsApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87B8861726F91424005FC370 /* Debug */,
+				87B8861826F91424005FC370 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8780B3E526FA49D400793FEA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.7.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8780B3E626FA49D400793FEA /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8780B3E526FA49D400793FEA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+		8780B3E826FA49D400793FEA /* FirebaseRemoteConfig */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8780B3E526FA49D400793FEA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseRemoteConfig;
+		};
+		8780B3EA26FA49D400793FEA /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8780B3E526FA49D400793FEA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		8780B3EC26FA49D400793FEA /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8780B3E526FA49D400793FEA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 87B885FA26F91423005FC370 /* Project object */;
+}
