@@ -7,6 +7,7 @@
 
 import UIKit
 import FirebaseAuth
+import Firebase
 
 class ViewController: UIViewController {
     
@@ -58,7 +59,26 @@ class ViewController: UIViewController {
         view.backgroundColor = .systemYellow
         
         button.addTarget(self, action: #selector(didTapButton), for: .touchUpInside)
+//        cards()
     }
+//    
+//    private let database = Database.database().reference()
+//    
+//    func cards() {
+//        database.observe(.value) { snapshot in
+////            print(snapshot.value)
+//            if let dict = snapshot.value as? [String: Any] {
+//                for (key, value) in dict {
+//                    let card = CardModel(dict: value as! [String : Any])
+//                    print(card)
+//                    card?.english
+//                    card?.portuguese
+//                }
+//            }
+//            print("fetching")
+//        }
+//    }
+//    
     
     override func viewDidLayoutSubviews() {
         label.frame = CGRect(x: 0, y: 100, width: view.frame.size.width, height: 80)
@@ -162,8 +182,27 @@ class ViewController: UIViewController {
 }
 
 
-
-    
+/// Model file
+//struct CardModel: Decodable {
+//    let english: String
+//    let portuguese: String
+//    
+//    var dict: [String: Any] {
+//        return [
+//            "english": english,
+//            "portuguese": portuguese
+//        ]
+//    }
+//}
+//
+//extension CardModel {
+//    init?(dict: [String: Any]) {
+//        guard let eng = dict["english"] as? String,
+//              let por = dict["portuguese"] as? String
+//        else { return nil }
+//        self.init(english: eng, portuguese: por)
+//    }
+//}
     
 
 

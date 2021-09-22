@@ -84,10 +84,6 @@ class CreateCardsViewController: UIViewController {
     
     @objc func addCard() {
         print("creating a new card")
-///add action
-        
-//        var ref: DatabaseReference!
-//        ref = Database.database().reference()
         
         let object: [String: Any] = [
             "portuguese" : portuguese.text as Any,
