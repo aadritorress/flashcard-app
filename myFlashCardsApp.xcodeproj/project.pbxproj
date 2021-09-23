@@ -16,6 +16,8 @@
 		8780B3EB26FA49D400793FEA /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 8780B3EA26FA49D400793FEA /* FirebaseAuth */; };
 		8780B3ED26FA49D400793FEA /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 8780B3EC26FA49D400793FEA /* FirebaseDatabase */; };
 		8780B3EF26FB800E00793FEA /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8780B3EE26FB800E00793FEA /* CardModel.swift */; };
+		8780B45426FCC1BA00793FEA /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8780B45226FCC1BA00793FEA /* CardCell.swift */; };
+		8780B45726FCC79D00793FEA /* Cards.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8780B45626FCC79D00793FEA /* Cards.storyboard */; };
 		87B8860626F91423005FC370 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B8860526F91423005FC370 /* AppDelegate.swift */; };
 		87B8860826F91423005FC370 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B8860726F91423005FC370 /* SceneDelegate.swift */; };
 		87B8860A26F91423005FC370 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B8860926F91423005FC370 /* ViewController.swift */; };
@@ -30,6 +32,8 @@
 		8780B3DA26F9FC8600793FEA /* MyAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAccountViewController.swift; sourceTree = "<group>"; };
 		8780B3DC26FA01E600793FEA /* AllCardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCardsViewController.swift; sourceTree = "<group>"; };
 		8780B3EE26FB800E00793FEA /* CardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModel.swift; sourceTree = "<group>"; };
+		8780B45226FCC1BA00793FEA /* CardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
+		8780B45626FCC79D00793FEA /* Cards.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Cards.storyboard; sourceTree = "<group>"; };
 		87B8860226F91423005FC370 /* myFlashCardsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myFlashCardsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87B8860526F91423005FC370 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		87B8860726F91423005FC370 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -82,8 +86,10 @@
 				8780B3DA26F9FC8600793FEA /* MyAccountViewController.swift */,
 				8780B3B426F953BE00793FEA /* CreateCardsViewController.swift */,
 				8780B3EE26FB800E00793FEA /* CardModel.swift */,
-				87B8860B26F91423005FC370 /* Main.storyboard */,
+				8780B45226FCC1BA00793FEA /* CardCell.swift */,
+				8780B45626FCC79D00793FEA /* Cards.storyboard */,
 				87B8860E26F91424005FC370 /* Assets.xcassets */,
+				87B8860B26F91423005FC370 /* Main.storyboard */,
 				87B8861026F91424005FC370 /* LaunchScreen.storyboard */,
 				87B8861326F91424005FC370 /* Info.plist */,
 			);
@@ -159,6 +165,7 @@
 				87B8861226F91424005FC370 /* LaunchScreen.storyboard in Resources */,
 				8780B3B326F93F4600793FEA /* GoogleService-Info.plist in Resources */,
 				87B8860F26F91424005FC370 /* Assets.xcassets in Resources */,
+				8780B45726FCC79D00793FEA /* Cards.storyboard in Resources */,
 				87B8860D26F91423005FC370 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -173,6 +180,7 @@
 				87B8860A26F91423005FC370 /* ViewController.swift in Sources */,
 				87B8860626F91423005FC370 /* AppDelegate.swift in Sources */,
 				8780B3DB26F9FC8600793FEA /* MyAccountViewController.swift in Sources */,
+				8780B45426FCC1BA00793FEA /* CardCell.swift in Sources */,
 				8780B3EF26FB800E00793FEA /* CardModel.swift in Sources */,
 				8780B3B526F953BE00793FEA /* CreateCardsViewController.swift in Sources */,
 				8780B3DD26FA01E600793FEA /* AllCardsViewController.swift in Sources */,

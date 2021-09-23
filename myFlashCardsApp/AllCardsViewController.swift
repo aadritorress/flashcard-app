@@ -8,7 +8,7 @@
 import UIKit
 import FirebaseDatabase
 
-class AllCardsViewController: UIViewController {
+class AllCardsViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     
     
     private let database = Database.database().reference()
@@ -17,42 +17,12 @@ class AllCardsViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .brown
         title = "Cards"
-        
-//        let labelE = UILabel()
-//        labelE.frame = CGRect(x: 0, y: 0, width: 100, height: 20)
-//        labelE.textAlignment = .center
-//        labelE.text = "english word"
-//        labelE.sizeToFit()
-
-        let cardViewE = UIView()
-        cardViewE.frame = CGRect(x: 50, y: 150, width: 170, height: 100)
-        cardViewE.backgroundColor = .orange
-        let gesture2 = UITapGestureRecognizer(target: self, action: #selector(self.PortugueseAction(_:)))
-        self.view.addSubview(cardViewE)
-//        cardViewE.addSubview(labelE)
-        cardViewE.addGestureRecognizer(gesture2)
+    
         
         cards()
-        
     }
     
-    @objc func PortugueseAction(_ sender:UITapGestureRecognizer){
-       
-//        let labelP = UILabel()
-//        labelP.frame = CGRect(x: 0, y: 0, width: 100, height: 20)
-//        labelP.textAlignment = .center
-//        labelP.text =
-//        labelP.sizeToFit()
-        
-        let cardViewP = UIView()
-        cardViewP.frame = CGRect(x: 50, y: 150, width: 170, height: 100)
-        cardViewP.backgroundColor = .white
-//        let gesture = UITapGestureRecognizer(target: self, action: #selector(self.EnglishAction(_:)))
-        self.view.addSubview(cardViewP)
-//        cardViewP.addSubview(labelP)
-//        cardViewP.addGestureRecognizer(gesture)
-       }
-
+    
     var cardsArray: [CardModel] = []
     
     func cards() {
@@ -67,10 +37,6 @@ class AllCardsViewController: UIViewController {
                         self.cardsArray.append(card)
 //                        print("array: \(cardsArray)")
                         print("card: \(card)")
-                        let cardViewP = UIView()
-                        cardViewP.frame = CGRect(x: 50, y: 150, width: 170, height: 100)
-                        cardViewP.backgroundColor = .white
-                        self.view.addSubview(cardViewP)
                         
                     }
                 }
@@ -78,4 +44,20 @@ class AllCardsViewController: UIViewController {
             print("fetching")
         }
     }
+    
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return cardsArray.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! CardCell
+        
+        cell.word.text = "some value"
+        
+        return cell
+    }
+    
+    
+    
 }
